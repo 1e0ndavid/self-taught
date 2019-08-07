@@ -49,4 +49,22 @@
 均方误差 MSE（Mean Squared Error），均方根误差 RMSE（Root Mean Squared Error），平均绝对误差 MAE（Mean Absolute Error），R方值（R2_score）
 
 ### 6. sklearn参数详解：
-
+from sklearn.linear_model import LinearRegression
+LinearRegression(fit_intercept=True,normalize=False,copy_X=True,n_jobs=1)
+'''
+参数含义：
+1.fit_intercept:布尔值，指定是否需要计算线性回归中的截距，即b值。如果为False,
+那么不计算b值。
+2.normalize:布尔值。如果为False，那么训练样本会进行归一化处理。
+3.copy_X：布尔值。如果为True，会复制一份训练数据。
+4.n_jobs:一个整数。任务并行时指定的CPU数量。如果取值为-1则使用所有可用的CPU。
+返回值：
+5.coef_:权重向量
+6.intercept_:截距b值
+ 
+方法：
+1.fit(X,y)：训练模型。
+2.predict(X)：用训练好的模型进行预测，并返回预测值。
+3.score(X,y)：返回预测性能的得分。计算公式为：score=(1 - u/v)
+其中u=((y_true - y_pred) ** 2).sum()，v=((y_true - y_true.mean()) ** 2).sum()
+score最大值是1，但有可能是负值(预测效果太差)。score越大，预测性能越好。
