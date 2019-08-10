@@ -25,7 +25,7 @@ email = browser.find_element_by_name('email')
 email.send_keys('jianbodai')
 
 password = browser.find_element_by_name('password')
-password.send_keys('DAI81991zhen')
+password.send_keys('******')
 
 login_em = browser.find_element_by_id('dologin')
 login_em.click()
