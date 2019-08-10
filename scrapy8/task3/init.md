@@ -13,7 +13,7 @@
 
 ### 任务1
 
-用pip可以直接安装selenium，然后打开chrome在地址栏输入chrome://version/ 可以看版本，根据chrome版本号下载相应的chromedriver并且将其添加到环境变量中，或者在使用时声明其位置
+用pip可以直接安装selenium，然后打开chrome在地址栏输入chrome://version/ 可以看版本，根据chrome版本号到https://npm.taobao.org/mirrors/chromedriver/ 下载相应的chromedriver并且将其添加到环境变量中，或者在使用时声明其位置
 
 试用selenium代码如下：
 ```python
